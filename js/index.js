@@ -38,5 +38,66 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.querySelector("#logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//Update the img for the cta
+let cta = document.querySelector("#cta-img");
+cta.setAttribute("src", siteContent["cta"]["img-src"]);
+
+//Update the img for the main content
+let main = document.querySelector(".middle-img");
+main.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+//Update Nav
+const nave = document.querySelectorAll("nav a");
+
+nave[0].textContent = siteContent["nav"]["nav-item-1"];
+nave[1].textContent = siteContent["nav"]["nav-item-2"];
+nave[2].textContent = siteContent["nav"]["nav-item-3"];
+nave[3].textContent = siteContent["nav"]["nav-item-4"];
+nave[4].textContent = siteContent["nav"]["nav-item-5"];
+nave[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//Update H1
+const awesome = document.querySelector("h1");
+awesome.textContent = siteContent["cta"]["h1"];
+
+// Update button
+const buttone = document.querySelector("button");
+buttone.textContent = siteContent["cta"]['button'];
+
+//Update main h4
+const mainCont = document.querySelectorAll(".main-content .text-content h4");
+mainCont[0].textContent = siteContent["main-content"]["features-h4"];
+mainCont[1].textContent = siteContent["main-content"]["about-h4"];
+mainCont[2].textContent = siteContent["main-content"]["services-h4"];
+mainCont[3].textContent = siteContent["main-content"]["product-h4"];
+mainCont[4].textContent = siteContent["main-content"]["vision-h4"];
+
+//Update main text p
+const mainText = document.querySelectorAll(".main-content .text-content p");
+mainText[0].textContent = siteContent["main-content"]["features-content"];
+mainText[1].textContent = siteContent["main-content"]["about-content"]; 
+mainText[2].textContent = siteContent["main-content"]["services-content"];
+mainText[3].textContent = siteContent["main-content"]["product-content"];
+mainText[4].textContent = siteContent["main-content"]["vision-content"]; 
+
+//Update Contact h4
+const contactText = document.querySelector(".contact h4");
+contactText.textContent = siteContent["contact"]["contact-h4"];
+
+//update Contact p
+const contactP = document.querySelectorAll(".contact p");
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
+
+//Update Footer
+const footerText = document.querySelector("footer p");
+footerText.textContent = siteContent["footer"]["copyright"];
+
+
+
+
+
